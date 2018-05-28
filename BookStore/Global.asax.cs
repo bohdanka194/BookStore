@@ -14,7 +14,8 @@ namespace BookStore
     {
         protected void Application_Start()
         {
-            Database.SetInitializer(new BookDbInitializer());
+            //for first use
+            //Database.SetInitializer(new BookDbInitializer());
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
